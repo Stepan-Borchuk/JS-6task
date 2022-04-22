@@ -1,7 +1,7 @@
 const fontSizeValue = document.querySelector('#font-size-control');
 const textSize = document.querySelector('#text');
 
-fontSizeValue.addEventListener('click', onRangePositionChange)
+fontSizeValue.addEventListener('input', onRangePositionChange)
 
 function onRangePositionChange(event) {
     console.log(event.currentTarget.value);
