@@ -5,7 +5,9 @@
     display:block;
     
  border-radius: 10%;
-
+outline-style: solid;
+outline-color: blue;
+outline-width: 5px;
  
 }
 
@@ -15,6 +17,7 @@ width: 1600px;
 padding-left: 15px;
 padding-right: 15px;
 margin: 0 auto;
+
 
 display: flex;
 flex-direction: row;
