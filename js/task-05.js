@@ -6,14 +6,22 @@ const refs = {
 refs.inputName.addEventListener('input', onInputChange);
 
 function onInputChange(event) {
-    refs.buttonName.textContent = event.currentTarget.value; 
+    // refs.buttonName.textContent = event.currentTarget.value; 
+  
+    refs.buttonName.textContent = event.currentTarget.value;
+
+    if (refs.buttonName.textContent =='') {
+        refs.buttonName.textContent = 'Anonymous';
+    }
 }
+
+
 
 // refs.inputName.addEventListener('blur', onInputBlur);
 
 // // console.log(input)
 
-// function onInputBlur() {
-//     console.log(refs.inputName.value ) 
+
+    // console.log(`${refs.buttonName.textContent}`) 
 
 // }
