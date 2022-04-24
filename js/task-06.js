@@ -5,7 +5,7 @@ console.log(inputValidator.dataset.length)
 inputValidator.addEventListener('blur', onBlurEvent)
 
 function onBlurEvent() {
-     if (inputValidator.value.length == inputValidator.dataset.length) {
+     if (inputValidator.value.length === inputValidator.dataset.length) {
         inputValidator.classList.remove('invalid')
         inputValidator.classList.add('valid')
     } else {
